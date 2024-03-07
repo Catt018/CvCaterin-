@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    box-sizing:border-box ;
+    }
+    
+    body{
+    font-family: cursive;
+    padding: 90px 20px 0;
+    
+    }
+    
+    .header{
+    background-color: rgb(99, 57, 177);
+    height: 80px;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0; 
+    }
+    
+    .nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+    
+    }
+    
+    .navml{
+    color:rgb(240, 231, 245);
+    text-decoration: none;
+    }
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0 40px;  
+        line-height: 80px; 
+        }
+        
+        .nav-menu{ 
+            display: flex;
+            margin-right: 40px;
+            list-style: none;
+        }
+          
+        .nmi{
+           font-size: 18px;
+           margin: 0 10px;
+           line-height: 80px;
+           text-transform: uppercase;
+           width: max-content;
+         } 
+         
+        .nml{
+        padding: 8px 12px;
+        border-radius: 5px;
+        
+        }
+        .nml:hover{
+           background-color:rgb(203, 172, 243);
+           transition: 1;
+        }
+        .toggle{
+            background-color: rgb(190, 142, 218);
+            border: none;
+            color:rgb(186, 103, 204);
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+            
+            }
+            
+            @media (max-width: 768px){
+            body{
+                 background-color:rgb(225, 191, 233);
+                 padding-top: 70px;
+            }
+            
+            .header{
+            height: 60px;
+            }
+            
+            .logo{
+            font-size: 25px;
+            padding: 0 20px;  
+            line-height: 60px; 
+            }
+            
+            .nav-menu{ 
+               flex-direction: column;
+               align-items:center;
+               margin-right: 20px;
+               background-color: #c26fe9;
+               position: fixed;
+               left: 0;
+               top: 60px;
+               width: 100%;
+               padding: 20px 0;
+               height: calc(100%-60px);
+               overflow: auto;
+               left: 100%;
+               transition: left 0.3s;
+            }
+             
+            .nmi{
+               
+              line-height: 70px;
+            } 
+            
+            .nml:hover,
+            .nav-menu-linka{
+              background:none;
+              color:rgb(232, 220, 240);
+            }
+            
+            .toggle {
+            background-color: rgb(61, 28, 95);
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            }
+            .nav-menvi{
+            left:0;
+            }
+        }                                    
